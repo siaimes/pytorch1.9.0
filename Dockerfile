@@ -1,7 +1,7 @@
 FROM pytorch/pytorch:1.9.0-cuda11.1-cudnn8-devel
 
-#UN conda install -y faiss-gpu scikit-learn pandas -c conda-forge
+RUN conda install -y faiss-gpu scikit-learn pandas flake8 yapf isort yacs gdown future -c conda-forge
 
-#UN pip install opencv-python
+RUN pip install opencv-python tb-nightly
 
-#UN apt-get update && apt-get install -y libgl1-mesa-glx libpci-dev curl nano psmisc
+RUN apt-get update && apt-get install -y libgl1-mesa-glx libpci-dev curl nano psmisc
