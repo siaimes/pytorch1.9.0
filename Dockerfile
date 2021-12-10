@@ -10,7 +10,7 @@ RUN unzip Times-New-roman.zip
 
 RUN mkdir Times-New-Roman
 
-COPY ["Times New Roman/*", "/Times-New-Roman"]
+RUN cp "Times New Roman/*" "Times-New-Roman/"
 
 FROM pytorch/pytorch:1.9.0-cuda11.1-cudnn8-devel
 
