@@ -16,4 +16,4 @@ RUN pip install opencv-python tb-nightly matplotlib pyro-ppl
 
 RUN apt-get update && apt-get install -y libgl1-mesa-glx libpci-dev curl nano psmisc zip
 
-COPY from=builder '/Times New Roman/*' /opt/conda/lib/python3.7/site-packages/matplotlib/mpl-data/fonts/ttf/
+COPY from=builder "/Times New Roman/*" /opt/conda/lib/python3.7/site-packages/matplotlib/mpl-data/fonts/ttf/
